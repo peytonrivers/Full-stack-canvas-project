@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html {
+    font-family: 'Inter';
+}
+
+p {
+    font-family: 'Inter';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.header { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-bottom: 1px solid rgb(230, 230, 230);
+    height: 75px; 
+    width: 100%;
+    background-color: white;
+} 
+
+.header-box {
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+    width: 90%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    gap: 2px;
+}
+
+.header-name {
+    font-family: 'Inter';
+    font-size: 13pt;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.header-subtitle {
+    font-family: 'Inter';
+    font-size: 9.5pt;
+    margin: 0;
+    color: rgb(120, 120, 120);
+}
+
+.header-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.header-meta {
+    font-family: 'Inter';
+    font-size: 10pt;
+    color: rgb(140, 140, 140);
+    margin: 0;
+}
+
+.charlotte-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.front { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    height: 300px;
+    width: 100%;
+} 
+
+.font-container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.font-container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.font-top {
+    font-family: 'Inter';
+    font-size: 30pt;
+    color: black;
+}
+
+.font-bottom {
+    font-size: 20pt;
+    font-family: 'Inter';
+    color: rgb(90, 90, 90);
+}
+
+#charlotte {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+.font-container p {
+    display: inline-flex;
+} 
+
+.awards {
+    display: flex;
+    background-color: rgb(233, 232, 232);
+    height: 300px; width: 100%;
+} 
+
+.awards-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: calc(100% / 3);
+} 
+
+.awards-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: calc(100% / 3);
+} 
+
+.awards-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: calc(100% / 3);
+}
+
+.awards-top {
+    font-family: 'Inter';
+    font-size: 20pt;
+    color: black;
+}
+
+.awards-bottom {
+    font-size: 14pt;
+    font-family: 'Inter';
+    color: rgb(90, 90, 90);
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.preview-courses {
+    display: flex;
+    justify-content: center;
+    height: 175px;
+    width: 100%;
+} 
+
+.preview-courses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+} 
+
+.preview-courses-container p {
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.assignments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    gap: 40px;
+    justify-self: center;
+    width: 90%;
+    padding-bottom: 100px;
+} 
+
+.assignments-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid lightgray;
+} 
+
+.assignments-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+} 
+
+.assignments-container:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    scale: 1.02;
+} 
+
+.assignments-box:hover {
+    border: none;
+}
+
+.assignments-details {
+    width: 85%;
+    height: 85%
+} 
+
+.assignments-details-top {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+} 
+
+.assignments-details-top-half {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+} 
+
+.assignments-details-top-half .top {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        /* number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 11.5pt;
+    line-height: 1.3;
+    max-height: calc(1.3em * 2); /* line-height × lines */
+}
+
+.assignments-details-top-bottom-half {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.top {
+    font-size: 13pt;
+    font-family: 'Inter'
+}
+
+.letter-bottom {
+    font-size: 13pt;
+    font-family: 'Inter';
+    color: rgb(90, 90, 90);
+}
+
+.bottom {
+    font-size: 11pt;
+    font-family: 'Inter';
+    color: rgb(90, 90, 90); } 
+
+.assignments-details-top hgroup {
+    display: inline;
+} 
+
+.assignments-details-middle {
+    height: 45%;
+    width: 100%;
+}
+
+.assignments-details-middle-top {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% / 3);
+    width: 100%;
+}
+
+.assignments-details-middle-top-left {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 50%;
+}
+
+.assignments-details-middle-top-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 100%;
+    width: 40%;
+}
+
+.assignments-details-middle-middle {
+    display: flex;
+    align-items: center;
+    height: calc(100% / 3);
+    width: 100%;
+}
+
+.assignments-details-middle-middle-bar {
+    height: 20%;
+    width: 100%;
+    border-radius: 1999px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.assignments-details-middle-middle-bar-total {
+    height: 100%;
+    width: 93.45%;
+    background-color: black;
+}
+
+.assignments-details-middle-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% / 3);
+    width: 100%;
+}
+
+.assignments-details-middle-bottom-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.assignments-details-middle-bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.assignments-details-middle-container {
+    background-color: blue;
+    height: 80%;
+    width: 80%;
+}
+
+.assignments-details-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+    width: 100%;
+}
+
+.assignments-details-bottom-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+
+.assignments-details-bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+.personal-close {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-close-inner {
+    width: 90%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+}
+
+.personal-close-left {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.personal-eyebrow {
+    font-size: 10pt;
+    font-family: 'Inter';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(120, 120, 120);
+    margin: 0;
+}
+
+.personal-title {
+    font-size: 26pt;
+    font-family: 'Inter';
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.personal-body {
+    font-size: 12pt;
+    font-family: 'Inter';
+    color: rgb(80, 80, 80);
+    line-height: 1.7;
+    margin: 0;
+    max-width: 520px;
+}
+
+.personal-signature {
+    font-size: 11pt;
+    font-family: 'Inter';
+    margin-top: 10px;
+    color: black;
+}
+
+.personal-close-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.personal-metric {
+    border: 1px solid lightgray;
+    padding: 22px;
+    background-color: white;
+}
+
+.metric-value {
+    font-size: 20pt;
+    font-family: 'Inter';
+    margin: 0;
+}
+
+.metric-label {
+    font-size: 10.5pt;
+    font-family: 'Inter';
+    color: rgb(100, 100, 100);
+    margin: 6px 0 0 0;
+}
+
+/* Footer */
+.personal-footer {
+    width: 100%;
+    border-top: 1px solid rgb(230, 230, 230);
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.personal-footer-inner {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    font-size: 10pt;
+    font-family: 'Inter';
+    color: rgb(120, 120, 120);
+    margin: 0;
+}
+
+/* =========================
+   RESPONSIVE (MOBILE SAFE)
+   DOES NOT TOUCH ASSIGNMENTS
+   ========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .font-top {
+        font-size: 24pt;
+    }
+
+    .font-bottom {
+        font-size: 15pt;
+    }
+
+    #charlotte {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .personal-close-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .personal-body {
+        max-width: 100%;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+    /* Header stacks */
+    .header {
+        position: relative;
+        height: auto;
+        padding-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    #footer {
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .header-box {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 1fr;   /* 👈 equal height rows */
+        height: 70px;
+        align-items: center;
+    }
+
+    .header-left {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .header-center {
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: flex-start;
+        width: 200px;
+    }
+
+    .header-right {
+        grid-column: 2;
+        grid-row: 1 / span 2; /* span both rows */
+        justify-self: end;
+        align-items: flex-end;
+        padding-top: 5px;
+    }
+
+    .header-name {
+        font-size: 12pt;
+    }
+
+    .header-meta {
+        font-size: 9.5pt;
+    }
+
+
+
+    /* Hero section stacks */
+    .front {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .font-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .font-container-left,
+    .font-container-right {
+        width: 100%;
+    }
+
+    .font-top {
+        font-size: 22pt;
+        line-height: 1.15;
+        margin: 0;
+    }
+
+    .font-bottom {
+        font-size: 13pt;
+        margin-top: 8px;
+    }
+
+    #charlotte {
+        width: 85%;
+        max-width: 280px;
+    }
+
+    .assignments {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Semester title spacing */
+    .preview-courses {
+        height: auto;
+        padding: 22px 0;
+    }
+
+    .preview-courses-container p {
+        font-size: 16pt;
+        margin: 0;
+    }
+
+    /* Personal close stacks */
+    .personal-close {
+        padding: 50px 0;
+    }
+
+    .personal-close-inner {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .personal-title {
+        font-size: 20pt;
+        line-height: 1.2;
+    }
+
+    .personal-body {
+        font-size: 11pt;
+    }
+
+    .personal-close-right {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .personal-metric {
+        padding: 16px;
+    }
+
+    .metric-value {
+        font-size: 15pt;
+    }
+
+    .metric-label {
+        font-size: 9.5pt;
+    }
+
+    /* Footer stacks */
+    .personal-footer-inner {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+    .personal-close-right {
+        grid-template-columns: 1fr;
+    }
+
+    .font-top {
+        font-size: 20pt;
+    }
+
+    .preview-courses-container p {
+        font-size: 15pt;
+    }
+}
+
+/* =========================
+   SCROLL REVEAL EFFECT
+   ========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
