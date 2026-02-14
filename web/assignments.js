@@ -22,7 +22,7 @@ document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
 
 // ===== API =====
-const fastApi = "http://127.0.0.1:8000";
+const fastApi = "https://full-stack-canvas-project.onrender.com";
 
 function formatDueDate(dueValue) {
   if (!dueValue) return "—";

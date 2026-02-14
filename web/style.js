@@ -16,7 +16,7 @@ const revealObserver = new IntersectionObserver(
 
 revealElements.forEach(el => revealObserver.observe(el));
 
-const fastApi = "http://127.0.0.1:8000"
+const fastApi = "https://full-stack-canvas-project.onrender.com"
 
 async function averageGradeCalculator () {
     const totalGradesApi = `${fastApi}/totalgrades`
