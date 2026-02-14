@@ -28,6 +28,10 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/")
+def home():
+    return {"status": "Everything working just fine."}
+
 # grabbing each of my courses name and final grade
 @app.get('/courses')
 def test(db: Session=Depends(get_db)):
