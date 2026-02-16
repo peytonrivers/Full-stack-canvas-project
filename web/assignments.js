@@ -242,4 +242,6 @@ searchBox.addEventListener("input", () => {
     const titleElement = box.querySelector(".assignments-box-top-bottom hgroup");
     const assignmentName = (titleElement?.textContent || "").toLowerCase();
 
-    box.style.display = assignmentName.includes(userInput) 
+    box.style.display = assignmentName.includes(userInput) ? "" : "none";
+  });
+});

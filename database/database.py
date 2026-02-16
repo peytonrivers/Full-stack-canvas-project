@@ -95,4 +95,13 @@ class Syllabus(Base):
 def init_db():
     Base.metadata.create_all(engine)
 
-if __
+if __name__ == "__main__":
+    init_db()
+
+
+
+
+
+
+
+

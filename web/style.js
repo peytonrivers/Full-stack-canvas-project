@@ -207,4 +207,4 @@ document.querySelector("#math").addEventListener("click", mathEncode);
 
 document.querySelector("#english").addEventListener("click", englishEncode);
 
-document.querySelector("#cci").addEventList
+document.querySelector("#cci").addEventListener("click", cciEncode);

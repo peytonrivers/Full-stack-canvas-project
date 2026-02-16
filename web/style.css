@@ -74,6 +74,12 @@ body {
     height: 50px;
 }
 
+#footer {
+    border-top: 1px solid rgb(230, 230, 230);
+    margin-bottom: none;
+    border-bottom: none
+}
+
 .front { 
     display: flex; 
     justify-content: center;

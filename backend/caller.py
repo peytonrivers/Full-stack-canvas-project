@@ -117,4 +117,5 @@ def get_assignments_with_grades(db: Session = Depends(get_db)):
             "Points Possible": points_possible,
             "Percent": percent,
         }
-        for (course_name, ass
+        for (course_name, assignment_id, assignment_name, submitted_at, points_possible, percent) in rows
+    ]
