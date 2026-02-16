@@ -146,7 +146,7 @@ body {
 
 input {
     display: flex;
-    justify-self: center;
+    margin: 0 auto;
     width: 90%;
     max-width: 600px;
     font-family: 'Inter';
